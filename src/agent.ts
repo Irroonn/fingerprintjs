@@ -97,7 +97,7 @@ export function componentsToDebugString(components: UnknownComponents): string {
 }
 
 export function hashComponents(components: UnknownComponents): string {
-  return x64hash128(componentsToCanonicalString(components))
+  return componentsToCanonicalString(components)
 }
 
 /**
